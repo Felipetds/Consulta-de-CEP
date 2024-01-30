@@ -29,8 +29,12 @@ h1 {
     width: 90%;
 }
 
+.hide {
+    display: none !important;
+  }
+
 .resposta {
-    text-align: center;
+    margin: auto;
 }
 
 #texto-Cep {
@@ -65,5 +69,5 @@ h1 {
 }
 
 footer {
-    padding: 100px;
+    padding: 10px;
 }

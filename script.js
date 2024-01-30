@@ -1,6 +1,7 @@
 const txtCep = document.getElementById('texto-Cep');
 const searchBtn = document.getElementById('button');
 const resposta = document.getElementById('resposta');
+const cResp = document.getElementById('container-resposta');
 
 const getCepData = async(txtCep1) => {
 
@@ -20,6 +21,8 @@ const pesquisar = async (txtCep1) => {
   const dadosFormatados = `${data.address}, ${data.district}, ${data.city}, ${data.state}`; 
 
   resposta.innerHTML = dadosFormatados;
+
+  cResp.classList.remove('hide');
 
 }
 
